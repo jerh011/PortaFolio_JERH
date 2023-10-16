@@ -1,0 +1,83 @@
+
+
+footer {
+background-color:aliceblue;
+}
+html {
+    position: relative;
+    background-image: url('/css/fondo.jpg');
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('/css/fondo.jpg');
+}
+/*Habilidades*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.portada {
+    background-color: brown;
+    padding: 5rem;
+    margin: auto;
+    border-color: blue;
+    border-radius: 1.5rem;
+    margin: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.Fondo {
+    background-image: url('/css/fondo.jpg');
+}
+*/
+#Habilidades {
+    /*background-image: url('img/teclado2.jpeg');*/
+
+    border-radius: 1.5rem;
+    margin: 2.5% 5%;
+    padding: 1.5rem;
+    font-size: 16px;
+}
+
+
+.habilidades {
+    color: orangered;
+    background: linear-gradient(135deg,rgb(88, 80, 59)0%,rgb(11, 57, 119)100%);
+    box-shadow: 0 14px 20px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+
+    .habilidades li {
+        margin: 20px 0;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+.Barra {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8.25.1);
+}
+
+    .Barra:hover {
+        box-shadow: 0 14px 20px rgba(0,0,0,0.12),0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .Barra div {
+        height: 20px;
+        float: left;
+        background: linear-gradient(135deg,rgb(243, 3, 3)0%,rgb(2, 150, 51)100%);
+    }
+
+.html {
+    width: 90%;
+    animation: php 3s;
+}
