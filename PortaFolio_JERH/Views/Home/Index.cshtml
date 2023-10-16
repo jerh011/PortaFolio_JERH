@@ -8,7 +8,14 @@
     {
     <li>
         <h2>HTML</h2>
-        <div class="Barra"><div class="html"></div></div>
+            <div class="Barra" >
+                @if(x%2==0){
+                <div class="html" style="width:50%; animation: html 3s;"></div>
+                }else{
+                <div class="html" style="width:90%; animation: html 3s;"></div>
+                }
+        </div>
+            <!-- <div class="Barra"><div class="html"></div></div>-->
     </li>
         }
 </div>
