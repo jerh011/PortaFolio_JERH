@@ -1,31 +1,117 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<section class="inicio" id="inicio">
+    <div class="contenido-seccion">
+        <header>
+            <div class="nav-bar" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!--
+            <nav id="nav" class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobremi">Sobre mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#resumen">Resumen</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            -->
 
-<div class="habilidades" id="Habilidades">
-    <h2>Mi skill</h2>
-    @for (int x = 0; x < 10; x++)
-    {
-    <li>
-        <h2>HTML</h2>
-            <div class="Barra" >
-                @if(x%2==0){
-                <div class="html" style="width:50%; animation: html 3s;"></div>
-                }else{
-                <div class="html" style="width:90%; animation: html 3s;"></div>
-                }
+            <div class="logo">
+                M<span class="color">S</span>
+            </div>
+        </header>
+        <div class="info">
+            <!--Aqui va mi nombre-->
+            <h1>Jesus Eloy Rodriguez Hernadez</h1>
+
+            <h2>CODIFICADOR, DISEÑADOR, PROFESIONAL</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
         </div>
-            <!-- <div class="Barra"><div class="html"></div></div>-->
-    </li>
-        }
-</div>
+        <div class="foto">
+            <img src="/css/Portada.jpg" alt="">
+        </div>
+    </div>
+</section>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-- SECCION SOBRE MI -->
+<section class="sobremi" id="sobremi">
+    <div class="contenido-seccion">
+        <h2 class="titulo-seccion">Sobre Mi</h2>
+        <h3>Detalles personales</h3>
+
+        <p class="especial">Me dedico a producir ideas creativas y originales para mis clientes</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nobis! Sit, veniam aut omnis est suscipit itaque tempore fugiat! Repellat, necessitatibus. Neque quis, reprehenderit fugit dolore voluptate nam eum reiciendis!</p>
+
+        <div class="fila">
+            <div class="col">
+                <i class="fa-solid fa-user"></i>
+                <span class="titulo-detalle">Perfil</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, provident esse. Nesciunt quod eveniet dolorem necessitatibus iure, suscipit similique provident fugiat excepturi commodi</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-location-pin"></i>
+                <span class="titulo-detalle">Ubicación</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, provident esse. Nesciunt quod eveniet dolorem necessitatibus iure, suscipit similique provident fugiat excepturi commodi</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-flag"></i>
+                <span class="titulo-detalle">Intereses</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, provident esse. Nesciunt quod eveniet dolorem necessitatibus iure, suscipit similique provident fugiat excepturi commodi</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Habilidades -->
+<section>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Habilidades
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="Trasparente accordion-body">
+<!--Aque va el codigo -->
+    <div class="habilidades" id="Habilidades">
+                  
+        <div class="row">
+            <!--Aplicar foreach-->
+            @for (int x = 0; x < 21; x++)
+            {
+           
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h2>HTML</h2>
+                    <div class="Barra" >
+                            @if(x%2==0){
+                            <div class="html" style="width:50%; animation: html 3s;"></div>
+                            }else{
+                            <div class="html" style="width:90%; animation: html 3s;"></div>
+                            }
+                    </div>
+                        <!-- <div class="Barra"><div class="html"></div></div>-->
+                    
+                 </div>
+            }
+            <!--foreach-->
+         </div>
+    </div>
+                <!--Aque termina -->
+            </div>
+        </div>
+    </div>
+    </section>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br><br><br>
