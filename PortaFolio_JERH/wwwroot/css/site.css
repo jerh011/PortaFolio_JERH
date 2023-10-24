@@ -466,3 +466,8 @@ body {
     background: linear-gradient(135deg,rgb(11, 57, 119)0%,rgb(88, 80, 59)100%);
     border: none;
 }
+
+.Fondo {
+    background: #051a5e;
+    color:white;
+}

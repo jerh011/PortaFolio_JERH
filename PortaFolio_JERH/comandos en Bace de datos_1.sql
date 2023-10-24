@@ -11,7 +11,9 @@ create table DatosPersonales (
 	ApeMa varchar(40),	
 	Numero_cel varchar(16) null,
 	Correo1 varchar(30)null,
-	Correo2 varchar(30) not null
+	Correo2 varchar(30) not null,
+	Sobremi varchar(600),
+	Intereses varchar(600)
 );
 
 Create table Tecnologias(
@@ -26,17 +28,15 @@ Create table Tecnologias(
 
 create table Direccion(
 	ID_Direccion INT Primary key identity (1,1)  not null,
-	Calle varchar(40) not null,
-	NumeroDeCasa int  not null,
-	Coloniea varchar(40) not null,
-	CalleTrasera varchar(40) not null,
-	Ciudad varchar(40) not null,
-	Estado varchar(40) not null,
+	Calle varchar(40) not null,--
+	NumeroDeCasa int  not null,--
+	Coloniea varchar(40) not null,--
+	CalleTrasera varchar(40) not null,--
+	Ciudad varchar(40) not null,--
+	Estado varchar(40) not null,--
 	Id_DatosPersonales int,
 	constraint fk_DatosPersonales_Direccion foreign key (Id_DatosPersonales)
 	references DatosPersonales(Id_DatosPersonales)
-	
-	
 );
 go
 
@@ -45,9 +45,10 @@ as
 begin
 select * from DatosPersonales
 end
+go
 
 INSERT INTO DatosPersonales 
-VALUES (1, 'Jesus Eloy', 'Rodriguez','Hernandez','622-144-3188','jesus.tel@hotmail.com','jeelrohe@gmail.com');
+VALUES (1, 'Jesus Eloy', 'Rodriguez','Hernandez','622-144-3188','jesus.tel@hotmail.com','jeelrohe@gmail.com','e34werwtg34rtergwsef','fasdfw34egfdgsdfg34sdasdf');
 	go
 
 INSERT INTO Tecnologias 
@@ -77,10 +78,6 @@ VALUES ('Treviso', '4328','Urbi Villa del Real','Bretanga','Cd.Obregon','Sonora'
 	
 	
 
-INSERT INTO DatosPersonales 
-VALUES (1, 'Jesus Eloy', 'Rodriguez','Hernandez','622-144-3188','jesus.tel@hotmail.com','jeelrohe@gmail.com');
-	go
-
 
 create view View_datosPe
 as
@@ -91,6 +88,8 @@ select
 	DaPe.Numero_cel,
 	DaPe.Correo1,
 	DaPe.Correo2,
+	DaPe.Sobremi,
+	DaPe.Intereses,
 	Tec.Id_tecnologia,
 	Tec.Lenguaje,
 	Tec.Nivel,
@@ -107,4 +106,10 @@ inner join Direccion as Dic
 on Tec.Id_DatosPersonales=Dic.Id_DatosPersonales
 go
 
+
+
+create procedure SP_listar_CMTodo 
+as
+begin
 select *from View_datosPe
+end
