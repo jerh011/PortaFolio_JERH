@@ -13,7 +13,6 @@ namespace PortaFolio_JERH.Controllers
 
         public IActionResult Index()
         {
-         
             var lista = _Datos.Listar();
             return View(lista);
         }
