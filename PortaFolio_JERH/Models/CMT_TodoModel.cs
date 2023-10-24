@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PortaFolio_JERH.Models
 {
@@ -13,6 +14,7 @@ namespace PortaFolio_JERH.Models
         public string DaPe_Correo2 { get; set; }
         public string DaPe_Sobremi { get; set; }
         public string DaPe_Intereses { get; set; }
+        public string DaPe_Perfil { get; set; }
         public string Tec_Lenguaje { get; set; }
         public int Tec_Nivel { get; set; }
         public string Dic_Calle { get; set; }
@@ -21,7 +23,9 @@ namespace PortaFolio_JERH.Models
         public string Dic_CalleTrasera { get; set; }
         public string Dic_Ciudad { get; set; }
         public string Dic_Estad { get; set; }
-        
+         
+      
+
         /*
         public DatosPersonalesModel Model1Data { get; set; }
         public DireccionModel Model2Data { get; set; }

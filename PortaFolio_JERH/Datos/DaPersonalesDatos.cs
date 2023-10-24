@@ -31,6 +31,7 @@ namespace PortaFolio_JERH.Datos
                             DaPe_Correo2 = dr["Correo2"].ToString(),
                             DaPe_Sobremi = dr["Sobremi"].ToString(),
                             DaPe_Intereses = dr["Intereses"].ToString(),
+                            DaPe_Perfil= dr["Perfil"].ToString(),
                             Tec_Lenguaje = dr["Lenguaje"].ToString(),
                             Tec_Nivel = Convert.ToInt32(dr["Nivel"]),//entero
                             Dic_Calle = dr["Calle"].ToString(),

@@ -471,3 +471,6 @@ body {
     background: #051a5e;
     color:white;
 }
+footer {
+    z-index:-1;
+}
