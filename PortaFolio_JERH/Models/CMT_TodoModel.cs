@@ -23,14 +23,7 @@ namespace PortaFolio_JERH.Models
         public string Dic_CalleTrasera { get; set; }
         public string Dic_Ciudad { get; set; }
         public string Dic_Estad { get; set; }
-         
       
-
-        /*
-        public DatosPersonalesModel Model1Data { get; set; }
-        public DireccionModel Model2Data { get; set; }
-        public TecnologiasModel Model3Data { get; set; }
-        */
 
     }
 }

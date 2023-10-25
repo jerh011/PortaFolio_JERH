@@ -49,7 +49,10 @@ end
 
 
 INSERT INTO DatosPersonales 
-VALUES (1, 'Jesus Eloy', 'Rodriguez','Hernandez','622-144-3188','jesus.tel@hotmail.com','jeelrohe@gmail.com','e34werwtg34rtergwsef','fasdfw34egfdgsdfg34sdasdf','Mi perfil');
+VALUES (1, 'Jesus Eloy', 'Rodriguez','Hernandez','622-144-3188','jesus.tel@hotmail.com','jeelrohe@gmail.com',
+'Soy una persona muy responsable, cuando se compromete con algo no lo suelta hasta ver terminado con su meta , controlo bien el estrés y se trabajar medianamente bajo presión  ',
+'Normalmente cuando estoy descansando sin hacer investigaciones paso la tarde jugando videojuegos, haciendo aseo en mi casa o experimentando con conocimientos ya adquiridos normalmente esto es con hardware. ',
+'Soy un estudiante apasionado y comprometido que busca crecer tanto académica como personalmente. Mi objetivo es destacar en Tecnologías de la Información, área Desarrollo de Software Multiplataforma y contribuir de manera significativa en este campo. Poseo habilidades de comunicación,de programación intermedia, estoy en constante investigación para ampliar mis conocimientos y estoy dispuesto a enfrentar desafíos y aprender constantemente.');
 	
 
 INSERT INTO Tecnologias 
@@ -62,7 +65,15 @@ VALUES ('Java', '30',1);
 	
 INSERT INTO Tecnologias 
 VALUES ('HTML', '70',1);
-	
+
+INSERT INTO Tecnologias 
+VALUES ('XML', '60',1);
+
+INSERT INTO Tecnologias 
+VALUES ('XAMARIN', '40',1);
+
+INSERT INTO Tecnologias 
+VALUES ('SQL SERVER ', '40',1);
 
 INSERT INTO Tecnologias 
 VALUES ('JavaScript', '40',1);

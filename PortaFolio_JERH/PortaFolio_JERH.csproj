@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\Calculadora_1.jpg" />
+    <None Include="wwwroot\css\Calculadora_2.jpg" />
+    <None Include="wwwroot\css\Calculadora_3.jpg" />
+    <None Include="wwwroot\css\Calculadora_4.jpg" />
+    <None Include="wwwroot\css\Calculadora_5.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Twilio" Version="7.0.0-rc.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IMAGENES\" />
   </ItemGroup>
 
 </Project>
